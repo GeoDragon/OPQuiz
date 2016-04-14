@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.selfprojects.geonarz.opquiz.PlayPage"
+    android:background="@color/black"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Question Number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"
+            />
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Current Bounty: "
+                android:textAllCaps="true"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/beli"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/bounty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/character"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:src="@drawable/shura"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="32sp"
+            android:text="@string/question"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textAllCaps="true"
+            />
+
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:text="Option 1"
+                    android:textSize="30sp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:text="Option 2"
+                    android:textSize="30sp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:text="Option 3"
+                    android:textSize="30sp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <Button
+                    android:id="@+id/button4"
+                    android:text="Option 4"
+                    android:textSize="30sp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/button5"
+                    android:text="Option 5"
+                    android:textSize="30sp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

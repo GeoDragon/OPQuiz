@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OnePieceQuiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="play">Play</string>
+    <string name="title_activity_play_page">PlayPage</string>
+    <string name="question">Name This Character</string>
+    <string name="title_activity_score_page">ScorePage</string>
+    <string name="exit">Exit</string>
+</resources>
