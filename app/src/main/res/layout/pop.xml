@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_weight="9"
+                android:gravity="center"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/cross"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/shura"
+            android:id="@+id/character"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/charDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To be populated"
+                    android:layout_margin="10dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/indigo500"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -41,9 +41,9 @@
                 android:id="@+id/bountyFinal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="500,000,000"
-                android:textSize="45dp"
-                android:textColor="@color/black"
+                android:text="250,000,000"
+                android:textSize="45sp"
+                android:textColor="@color/colorAccent"
                 />
 
         </LinearLayout>
@@ -65,6 +65,38 @@
             android:textColor="@color/black"
             android:gravity="center"
             />
+
+        <TextView
+            android:textSize="45dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Current HighScore: "/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:src="@drawable/beli"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/highScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0,000,000"
+                android:textSize="45sp"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
