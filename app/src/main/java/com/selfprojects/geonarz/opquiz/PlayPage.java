@@ -190,7 +190,6 @@ public class PlayPage extends AppCompatActivity {
             characterName.setText(answer[questionNum-1]);
 
             popUpWindow = new PopupWindow(container, scrollView.getMeasuredWidth() -300, scrollView.getMeasuredHeight(), true);
-//            scrollView.getForeground().setAlpha(220);
             popUpWindow.showAtLocation(scrollView, Gravity.CENTER, 0, 0);
 
             container.setOnClickListener(new View.OnClickListener() {
@@ -216,17 +215,14 @@ public class PlayPage extends AppCompatActivity {
                 charDesc.setText("You are just guessing!");
 
                 popUpWindow = new PopupWindow(container, scrollView.getMeasuredWidth() -300, scrollView.getMeasuredHeight(), true);
-//                scrollView.getForeground().setAlpha(220);
                 popUpWindow.showAtLocation(scrollView, Gravity.CENTER, 0, 0);
 
                 container.findViewById(R.id.cross).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         popUpWindow.dismiss();
-//                        scrollView.getForeground().setAlpha(0);
                     }
                 });
-//                scrollView.getForeground().setAlpha(0);
                 numWrong=0;
             }
             else{
